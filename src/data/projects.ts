@@ -39,7 +39,7 @@ export const projects: Project[] = [
             'Whatsapp.png'
         ],
         githubUrl: 'https://github.com/narsingrao0405/syncomdesk',
-        liveUrl: 'https://syncomdesk.example.com'
+        liveUrl: 'https://syncom-desk.vercel.app/'
     },
     {
         id: 'callmintbct',
@@ -62,7 +62,7 @@ export const projects: Project[] = [
             'AddRoute.png'
         ],
         githubUrl: 'https://github.com/narsingrao0405/callmint-bct',
-        liveUrl: 'https://callmint-bct.example.com'
+        liveUrl: 'https://callmint-bct.vercel.app/'
     },
     {
         id: 'clingapp',
@@ -78,12 +78,12 @@ export const projects: Project[] = [
         ],
         screenshotFolder: 'ClingApp',
         screenshots: [], // No screenshots provided yet
-        githubUrl: 'https://github.com/narsingrao0405/clingapp'
+        githubUrl: ''
     },
     {
         id: 'licensemanager',
         name: 'License Manager',
-        description: 'A comprehensive software license management system for tracking and managing software licenses.',
+        description: 'A comprrehensive software license management system for tracking and managing software licenses.',
         technologies: ['Java', 'Spring Boot', 'MySQL', 'Angular'],
         features: [
             'License tracking and monitoring',
@@ -94,6 +94,6 @@ export const projects: Project[] = [
         ],
         screenshotFolder: 'LicenseManager',
         screenshots: [], // No screenshots provided yet
-        githubUrl: 'https://github.com/narsingrao0405/license-manager'
+        githubUrl: 'https://license-manager-xi.vercel.app/'
     }
 ];
