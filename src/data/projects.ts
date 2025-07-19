@@ -67,23 +67,39 @@ export const projects: Project[] = [
     {
         id: 'clingapp',
         name: 'ClingApp',
-        description: 'A social networking application focused on connecting people with shared interests.',
-        technologies: ['React Native', 'Firebase', 'Node.js'],
+        description: 'A social networking application focused on connecting people with shared interests and local businesses.',
+        technologies: [
+            'Frontend: React Native, TypeScript, Expo',
+            'Backend: Node.js, Express, TypeScript',
+            'Databases: MySQL, MongoDB',
+            'Cloud: AWS (S3, CloudFront, Lambda, EC2, RDS)'
+        ],
         features: [
-            'User profiles and authentication',
-            'Real-time messaging',
-            'Interest-based matching',
-            'Location-based services',
-            'Media sharing capabilities'
+            'User Profiles, authentication & authorization (Role Based Access)',
+            'Interest based matching',
+            'Location based matching & services',
+            'Media sharing capabilities',
+            'Rate the businesses/services via like, rate, comment etc.',
+            'Access current rating and reviews of Business User',
+            'Media Sharing capabilities and tag with business or User'
         ],
         screenshotFolder: 'ClingApp',
-        screenshots: [], // No screenshots provided yet
-        githubUrl: ''
+        screenshots: [
+            'SplashScreen.png',
+            'Onboarding1.png',
+            'CreateNewAccount1.png',
+            'Login.png',
+            'Explore.png',
+            'Clubs.png',
+            'PersonalProfiles.png',
+            'PublicProfile.png'
+        ],
+        liveUrl: 'https://play.google.com/store/apps/details?id=com.cling1.app&hl=en'
     },
     {
         id: 'licensemanager',
         name: 'License Manager',
-        description: 'A comprrehensive software license management system for tracking and managing software licenses.',
+        description: 'A comprehensive software license management system for tracking and managing software licenses.',
         technologies: ['Java', 'Spring Boot', 'MySQL', 'Angular'],
         features: [
             'License tracking and monitoring',

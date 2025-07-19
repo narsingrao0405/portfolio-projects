@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, Github } from 'lucide-react';
+import { ExternalLink, Github, Smartphone } from 'lucide-react';
 import ScreenshotGallery from './ScreenshotGallery';
 import { Project } from '../data/projects';
 
@@ -31,10 +31,17 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                                 href={project.liveUrl}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="p-2 text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors"
-                                aria-label="View live demo"
+                                className={`p-2 text-gray-600 rounded-lg transition-colors ${project.liveUrl.includes('play.google.com')
+                                    ? 'hover:text-green-600 hover:bg-green-50'
+                                    : 'hover:text-blue-600 hover:bg-blue-50'
+                                    }`}
+                                aria-label={project.liveUrl.includes('play.google.com') ? 'Download on Google Play' : 'View live demo'}
                             >
-                                <ExternalLink size={20} />
+                                {project.liveUrl.includes('play.google.com') ? (
+                                    <Smartphone size={20} />
+                                ) : (
+                                    <ExternalLink size={20} />
+                                )}
                             </a>
                         )}
                     </div>
@@ -63,6 +70,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                     screenshotFolder={project.screenshotFolder}
                     screenshots={project.screenshots}
                     className="mb-6"
+                    displayType={project.id === 'clingapp' ? 'mobile' : 'web'}
                 />
             </div>
 
@@ -101,10 +109,22 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                             href={project.liveUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium"
+                            className={`inline-flex items-center px-4 py-2 rounded-lg transition-colors text-sm font-medium ${project.liveUrl.includes('play.google.com')
+                                ? 'bg-green-600 text-white hover:bg-green-700'
+                                : 'bg-blue-600 text-white hover:bg-blue-700'
+                                }`}
                         >
-                            <ExternalLink size={16} className="mr-2" />
-                            Live Demo
+                            {project.liveUrl.includes('play.google.com') ? (
+                                <>
+                                    <Smartphone size={16} className="mr-2" />
+                                    Google Play
+                                </>
+                            ) : (
+                                <>
+                                    <ExternalLink size={16} className="mr-2" />
+                                    Live Demo
+                                </>
+                            )}
                         </a>
                     )}
                 </div>
