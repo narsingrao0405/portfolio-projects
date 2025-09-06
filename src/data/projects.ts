@@ -17,7 +17,7 @@ export const projects: Project[] = [
         description: 'A comprehensive customer support and ticket management system with multi-channel communication capabilities.',
         technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'Socket.io'],
         features: [
-            'Multi-channel support (Email, WhatsApp, Chat)',
+            'Multi-channel support (Email, WhatsApp, Chat, Voice)',
             'Ticket management and escalation',
             'Department-wise routing',
             'Real-time dashboard with analytics',
@@ -100,7 +100,7 @@ export const projects: Project[] = [
         id: 'licensemanager',
         name: 'License Manager',
         description: 'A comprehensive software license management system for tracking and managing software licenses.',
-        technologies: ['Java', 'Spring Boot', 'MySQL', 'Angular'],
+        technologies: ['React', 'Node.js', 'Express', 'MySQL'],
         features: [
             'License tracking and monitoring',
             'Automated renewal reminders',
