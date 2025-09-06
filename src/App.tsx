@@ -32,7 +32,7 @@ const App: React.FC = () => {
                                 <Github size={20} />
                             </a>
                             <a
-                                href="https://linkedin.com/in/narsingrao0405"
+                                href="https://linkedin.com/in/narsing0405"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="p-2 text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors"
@@ -140,7 +140,7 @@ const App: React.FC = () => {
                                 GitHub
                             </a>
                             <a
-                                href="https://linkedin.com/in/narsingrao0405"
+                                href="https://linkedin.com/in/narsing0405"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-gray-400 hover:text-white transition-colors"
